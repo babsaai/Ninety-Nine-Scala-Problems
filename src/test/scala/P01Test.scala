@@ -20,4 +20,9 @@ class P01Test extends FlatSpec {
     val list = List(1, 2, 4)
     assert(P01.last(list) == 4)
   }
+
+  it should "work with strings too" in {
+    val list = List("a","b")
+    assert(P01.last(list) == "b")
+  }
 }

@@ -7,7 +7,7 @@ package com.babsaai.ninetynine
 
 object P01 {
 
-  def last(list: List[Int]): Int = {
+  def last(list: List[Any]): Any = {
     list match {
       case head :: Nil   => head
       case _ :: tail     => last(tail)
